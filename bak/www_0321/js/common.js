@@ -7,8 +7,9 @@ $(document).ready(function () {
         }, 300);
     });
 
-    //wow
-    $('.wow').addClass('animated');
-    new WOW().init();
-
+    //loading
+    $(window).load(function(){
+        $(".loading").fadeOut();
+    });
+   
 });

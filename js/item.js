@@ -43,3 +43,18 @@ export class Item {
         this.DOM.description = this.DOM.el.querySelector('.item__caption-description');
 	}
 }
+
+$(document).ready(function () {
+    // top_btn
+    $('.top_btn').click('click', function (event) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: 0
+        }, 300);
+    });
+
+    //wow
+    $('.wow').addClass('animated');
+    new WOW().init();
+
+});
